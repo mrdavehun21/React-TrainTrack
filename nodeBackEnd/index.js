@@ -6,7 +6,8 @@ const PORT = 5000;
 require('dotenv').config();
 
 app.use(cors()); // Allow requests from other origins
-app.use(express.json());
+
+app.use(express.static(path.join(__dirname, '../reactFrontEnd/build')));
 
 // Import the JSON file
 const routeData = require('./routeIDs.json');
@@ -41,6 +42,10 @@ app.post('/api/vehicles', async (req, res) => {
 
 app.get('/api/routes', (req, res) => {
   res.json(routeData);
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../reactFrontEnd/build', 'index.html'));
 });
 
 app.listen(PORT, () => {
