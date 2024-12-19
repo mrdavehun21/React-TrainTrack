@@ -1,19 +1,18 @@
 {
-    "name": "react-node-app",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-      "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-      "start-backend": "cd nodeBackEnd && npm start",
-      "start-frontend": "cd reactFrontEnd && npm start",
-      "build": "cd reactFrontEnd && npm run build",
-      "heroku-postbuild": "cd reactFrontEnd && npm run build",
-      "install": "npm install --legacy-peer-deps"
-    },
-    "dependencies": {
-      "concurrently": "^7.3.0"
-    },
-    "devDependencies": {
-      "dotenv": "^16.4.7"
-    }
+  "name": "react-node-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd nodeBackEnd && npm start",
+    "start-frontend": "cd reactFrontEnd && npm start",
+    "build": "cd reactFrontEnd && npm run build",
+    "heroku-postbuild": "cd reactFrontEnd && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7"
   }
+}
