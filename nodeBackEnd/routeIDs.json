@@ -1,0 +1,6 @@
+[
+    { "routeID": "3010", "name": "Kelenföld vasútállomás M Bécsi út / Vörösvári út", "lineNumber": "1" },
+    { "routeID": "3020", "name": "Jászai Mari tér Közvágóhíd H", "lineNumber": "2" },
+    { "routeID": "3030", "name": "Mexikói út M Gubacsi út / Határ út", "lineNumber": "3" },
+    { "routeID": "1600", "name": "Békásmegyer H Óbudai rendelőintézet", "lineNumber": "160" }
+]
