@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node nodebackend/index.js",
-    "start-backend": "cd nodebackend && npm start",
-    "start-frontend": "cd reactfrontend && npm start",
-    "build": "cd reactfrontend && npm run build",
-    "heroku-postbuild": "cd reactfrontend && npm install && npm run build"
+    "start-backend": "npm run start-backend",
+    "start-frontend": "npm run start-frontend",
+    "build": "npm run build-frontend",
+    "build-frontend": "cd reactfrontend && npm run build",
+    "heroku-postbuild": "npm run build-frontend"
   }
 }
