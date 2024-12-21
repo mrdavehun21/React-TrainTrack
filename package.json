@@ -6,7 +6,7 @@
     "start-backend": "npm run start-backend",
     "start-frontend": "npm run start-frontend",
     "build": "npm run build-frontend",
-    "build-frontend": "cd reactfrontend && npm run build",
+    "build-frontend": "npm run build --prefix reactfrontend",
     "heroku-postbuild": "npm run build-frontend"
   }
 }
