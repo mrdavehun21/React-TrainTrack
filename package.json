@@ -1,11 +1,15 @@
 {
   "name": "react-node-app",
   "version": "1.0.0",
+  "engines": {
+	  "node": "22.12.0 ",
+	  "npm": "10.9.2"
+  }
   "scripts": {
     "start": "node nodeBackEnd/index.js",
     "start-backend": "cd nodeBackEnd && npm start",
     "start-frontend": "cd reactFrontEnd && npm start",
     "build": "cd reactFrontEnd && npm run build",
-    "heroku-postbuild": "npm install --unsafe-perm && npm run build --prefix reactFrontEnd"
+    "heroku-postbuild": "cd reactFrontEnd && npm install --unsafe-perm && npm run build"
   }
 }
