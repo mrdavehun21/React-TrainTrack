@@ -1,18 +1,11 @@
 {
   "name": "react-node-app",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "cd nodeBackEnd && npm start",
-    "start-frontend": "cd reactFrontEnd && npm start",
-    "build": "cd reactFrontEnd && npm run build",
-    "heroku-postbuild": "cd reactFrontEnd && npm run build"
-  },
-  "dependencies": {
-    "concurrently": "^7.3.0"
-  },
-  "devDependencies": {
-    "dotenv": "^16.4.7"
+    "start": "node nodebackend/index.js",
+    "start-backend": "cd nodebackend && npm start",
+    "start-frontend": "cd reactfrontend && npm start",
+    "build": "cd reactfrontend && npm run build",
+    "heroku-postbuild": "cd reactfrontend && npm install && npm run build"
   }
 }
