@@ -6,6 +6,6 @@
     "start-backend": "cd nodeBackEnd && npm start",
     "start-frontend": "cd reactFrontEnd && npm start",
     "build": "cd reactFrontEnd && npm run build",
-    "heroku-postbuild": "npm run build --prefix reactFrontEnd"
+    "heroku-postbuild": "npm install --unsafe-perm && npm run build --prefix reactFrontEnd"
   }
 }
