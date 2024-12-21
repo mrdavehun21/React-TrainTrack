@@ -2,10 +2,10 @@
   "name": "react-node-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "node nodebackend/index.js",  // For local testing
-    "start-backend": "cd nodebackend && npm start",  // Start the backend
-    "start-frontend": "cd reactfrontend && npm start",  // Start the frontend (if needed)
-    "build": "cd reactfrontend && npm run build",  // Build the frontend
-    "heroku-postbuild": "npm run build --prefix reactfrontend"  // Build frontend after deployment
+    "start": "node nodebackend/index.js",
+    "start-backend": "cd nodebackend && npm start",
+    "start-frontend": "cd reactfrontend && npm start",
+    "build": "cd reactfrontend && npm run build",
+    "heroku-postbuild": "npm run build --prefix reactfrontend"
   }
 }
