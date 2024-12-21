@@ -7,6 +7,6 @@
     "start-frontend": "npm run start-frontend",
     "build": "npm run build-frontend",
     "build-frontend": "npm run build --prefix reactfrontend",
-    "heroku-postbuild": "npm run build-frontend"
+    "heroku-postbuild": "npm run build --prefix reactfrontend"
   }
 }
